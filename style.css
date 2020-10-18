@@ -62,32 +62,32 @@ body {
   position: absolute;
   transition: 0.5s;
 }
-#num9 {
+#Numpad9 {
   left: 71%;
 }
-#num8 {
+#Numpad8 {
   left: 36%;
 }
-#num6 {
+#Numpad6 {
   top: 36%;
   left: 71%;
 }
-#num5 {
+#Numpad5 {
   left: 36%;
   top: 36%;
 }
-#num4 {
+#Numpad4 {
   top: 36%;
 }
-#num3 {
+#Numpad3 {
   top: 72%;
   left: 71%;
 }
-#num2 {
+#Numpad2 {
   top: 72%;
   left: 36%;
 }
-#num1 {
+#Numpad1 {
   top: 72%;
 }
 .changed {
