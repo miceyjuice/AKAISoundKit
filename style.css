@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 10px;
+}
+.container {
+  background-image: url("./assets/img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+.topBar {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 5rem 0 0;
+}
+.topBar button {
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  background: none;
+  border-radius: 0.2rem;
+  border: 2px solid #f891f1;
+  outline: none;
+  color: #f891f1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.topBar button:hover {
+  background: #feb3f5;
+  color: #1c1d20;
+}
+.mainMixer {
+  flex-basis: 67%;
+  height: 700px;
+  margin: 40px 0 0 15px;
+  display: flex;
+  background: url("./assets/img/mpcAkai.png");
+  position: relative;
+}
+.pads {
+  position: absolute;
+  width: 363px;
+  height: 358px;
+  top: 312px;
+  left: 26px;
+}
+.pad {
+  width: 100px;
+  height: 100px;
+  top: 1%;
+  left: 1%;
+  position: absolute;
+  transition: 0.5s;
+}
+#num9 {
+  left: 71%;
+}
+#num8 {
+  left: 36%;
+}
+#num6 {
+  top: 36%;
+  left: 71%;
+}
+#num5 {
+  left: 36%;
+  top: 36%;
+}
+#num4 {
+  top: 36%;
+}
+#num3 {
+  top: 72%;
+  left: 71%;
+}
+#num2 {
+  top: 72%;
+  left: 36%;
+}
+#num1 {
+  top: 72%;
+}
+.changed {
+  background-color: #fff;
+  filter: opacity(10%);
+}
