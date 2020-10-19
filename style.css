@@ -1,96 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
+html {
   font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #444444;
 }
 .container {
-  background-image: url("./assets/img/background.png");
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   width: 100%;
   height: 100vh;
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: flex-start;
+  align-items: center;
+  background-color: #efefef;
 }
-.topBar {
+.leftBar {
   flex-basis: 100%;
   display: flex;
-  justify-content: flex-end;
-  padding: 2rem 5rem 0 0;
+  width: 190px;
+  height: 100%;
+  position: absolute;
+  align-items: flex-start;
+  left: 0;
+  background: #272b34;
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.3);
 }
-.topBar button {
-  font-family: "Poppins", sans-serif;
-  padding: 0.5rem 2rem;
-  font-size: 1.2rem;
-  background: none;
-  border-radius: 0.2rem;
-  border: 2px solid #f891f1;
-  outline: none;
-  color: #f891f1;
-  cursor: pointer;
-  transition: 0.3s;
+.leftBar img {
+  object-fit: contain;
 }
 .topBar button:hover {
   background: #feb3f5;
   color: #1c1d20;
 }
 .mainMixer {
-  flex-basis: 67%;
-  height: 700px;
-  margin: 40px 0 0 15px;
-  display: flex;
-  background: url("./assets/img/mpcAkai.png");
+  height: 734px;
   position: relative;
+  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.1);
+  width: 667px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  border-radius: 1%;
+  background-color: #fff;
 }
 .pads {
-  position: absolute;
-  width: 363px;
-  height: 358px;
-  top: 312px;
-  left: 26px;
+  width: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 .pad {
-  width: 100px;
-  height: 100px;
-  top: 1%;
-  left: 1%;
-  position: absolute;
+  height: 153px;
   transition: 0.5s;
+  background-color: #fff;
+  flex-basis: 153px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
 }
-#Numpad9 {
-  left: 71%;
-}
-#Numpad8 {
-  left: 36%;
-}
-#Numpad6 {
-  top: 36%;
-  left: 71%;
-}
-#Numpad5 {
-  left: 36%;
-  top: 36%;
-}
-#Numpad4 {
-  top: 36%;
-}
-#Numpad3 {
-  top: 72%;
-  left: 71%;
-}
-#Numpad2 {
-  top: 72%;
-  left: 36%;
-}
-#Numpad1 {
-  top: 72%;
+.pad p {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  filter: opacity(30%);
 }
 .changed {
-  background-color: #fff;
+  background-color: #ccc;
   filter: opacity(10%);
+}
+.mixer-title {
+  font-size: 4rem;
+  font-family: "Poppins";
+  font-weight: 500;
+  padding: 3rem 0 0 8rem;
+}
+.mixer-description {
+  flex-basis: 100%;
+  padding-left: 8rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+.controls {
+  flex-basis: 50%;
+  /* display: flex; */
+  flex-wrap: wrap;
+  height: 734px;
+  background-color: #fff;
+  /* padding-left: 100px; */
+  margin-right: -185px;
+  margin-left: 35px;
+  padding: 3rem 8rem 3rem 8rem;
+  border-radius: 1%;
+}
+.controls-title {
+  flex-basis: 100%;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.controls-description {
+  flex-basis: 100%;
+  /* padding-left: 7rem; */
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+.record-panel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.record-button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  padding: 2rem 8rem;
+  border-radius: 10px;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+.record-dot {
+  background-color: #d85449;
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.channel-choice {
+  padding: 2rem 5rem;
+  line-height: 21px;
+  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.choice-text {
+  float: left;
+  font-size: 2rem;
+  padding-right: 3rem;
+}
+#channels {
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  border: none;
+  font-weight: 500;
+}
+.channel-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.channel-box-list {
+  list-style-type: none;
+  width: 100%;
+}
+.channel-box-list-item {
+  display: flex;
+  padding: 2rem 0;
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.channel-name {
+  display: flex;
+  padding-left: 3rem;
+  align-items: center;
+}
+.channel-name > p {
+  padding-left: 3rem;
+  font-size: 1.8rem;
+}
+.item-music-icon {
+  background-image: url(./assets/img/Icon\ material-queue-music.png);
+  background-position: center;
+  background-size: cover;
+  width: 2.3rem;
+  height: 1.7rem;
+}
+.list-option-icons {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+.item-play-icon {
+  background-image: url(./assets/img/Icon\ awesome-play.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 2rem;
+  padding: 18px;
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.item-play-delete {
+  background-image: url(./assets/img/Icon\ feather-trash-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1.8rem;
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+.item-play-more {
+  background-image: url(./assets/img/icon-more.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1.8rem;
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+.play-all {
+  padding: 1.8rem 5rem;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background-color: #63be52;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  margin: 2rem 3rem 0 0;
+  letter-spacing: 2px;
+  outline: none;
+}
+.reset-all {
+  padding: 1.8rem 5rem;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  border: none;
+  background-color: #646464;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+  outline: none;
 }
