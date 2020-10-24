@@ -63,17 +63,17 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.05);
   border-radius: 5%;
 }
 .pad p {
   font-size: 2rem;
   letter-spacing: 5px;
-  filter: opacity(30%);
 }
 .changed {
-  background-color: #ccc;
-  filter: opacity(10%);
+  background-color: #089788;
+  /* filter: opacity(30%); */
+  color: #ddd;
 }
 .mixer-title {
   font-size: 4rem;
@@ -203,8 +203,15 @@ html {
   padding: 18px;
   box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  transition: 0.2s ease-in;
 }
-.item-play-delete {
+.item-play-icon:hover {
+  background-image: url(./assets/img/Icon\ awesome-play-hover.png);
+  background-color: #089788;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.item-delete-icon {
   background-image: url(./assets/img/Icon\ feather-trash-2.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -212,8 +219,15 @@ html {
   box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
   border-radius: 1rem;
   margin-right: 2rem;
+  transition: 0.2s ease-in;
 }
-.item-play-more {
+.item-delete-icon:hover {
+  background-image: url(./assets/img/Icon\ feather-trash-2-hover.png);
+  background-color: #646464;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.item-more-icon {
   background-image: url(./assets/img/icon-more.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -222,12 +236,18 @@ html {
   border-radius: 1rem;
   margin-right: 2rem;
 }
+.item-more-icon:hover {
+  background-image: url(./assets/img/icon-more-hover.png);
+  background-color: #089788;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
 .play-all {
-  padding: 1.8rem 5rem;
+  padding: 1.3rem 5rem;
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
   border: none;
-  background-color: #63be52;
+  background-color: #089788;
   color: #fff;
   border-radius: 10px;
   box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
@@ -236,7 +256,7 @@ html {
   outline: none;
 }
 .reset-all {
-  padding: 1.8rem 5rem;
+  padding: 1.3rem 5rem;
   letter-spacing: 2px;
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
@@ -247,4 +267,8 @@ html {
   box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
   margin-top: 2rem;
   outline: none;
+}
+.summary-buttons {
+  display: flex;
+  justify-content: flex-end;
 }
