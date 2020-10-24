@@ -13,6 +13,6 @@ const changeColor = (id) => {
   document.querySelector(id).classList.add("changed");
   setTimeout(function () {
     document.querySelector(id).classList.remove("changed");
-  }, 100);
+  }, 200);
 };
 document.body.addEventListener("keypress", soundPlayer);
