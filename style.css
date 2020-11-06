@@ -63,7 +63,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.1);
   border-radius: 5%;
 }
 .pad p {
@@ -72,8 +72,8 @@ html {
 }
 .changed {
   background-color: #089788;
-  /* filter: opacity(30%); */
   color: #ddd;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 .mixer-title {
   font-size: 4rem;
@@ -90,11 +90,9 @@ html {
 }
 .controls {
   flex-basis: 50%;
-  /* display: flex; */
   flex-wrap: wrap;
   height: 734px;
   background-color: #fff;
-  /* padding-left: 100px; */
   margin-right: -185px;
   margin-left: 35px;
   padding: 3rem 8rem 3rem 8rem;
@@ -107,7 +105,6 @@ html {
 }
 .controls-description {
   flex-basis: 100%;
-  /* padding-left: 7rem; */
   font-size: 1.5rem;
   font-weight: 400;
   color: #5e5e5e;
@@ -121,7 +118,7 @@ html {
   background-color: transparent;
   border: none;
   font-size: 2rem;
-  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.1);
   padding: 2rem 8rem;
   border-radius: 10px;
   font-family: "Poppins";
@@ -141,7 +138,7 @@ html {
 .channel-choice {
   padding: 2rem 5rem;
   line-height: 21px;
-  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -169,7 +166,7 @@ html {
 .channel-box-list-item {
   display: flex;
   padding: 2rem 0;
-  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   width: 100%;
   justify-content: space-between;
@@ -202,7 +199,7 @@ html {
   background-repeat: no-repeat;
   margin-right: 2rem;
   padding: 18px;
-  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: 0.2s ease-in;
 }
@@ -217,7 +214,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   padding: 1.8rem;
-  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   margin-right: 2rem;
   transition: 0.2s ease-in;
@@ -233,7 +230,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   padding: 1.8rem;
-  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   margin-right: 2rem;
 }
@@ -251,10 +248,16 @@ html {
   background-color: #089788;
   color: #fff;
   border-radius: 10px;
-  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.1);
   margin: 2rem 3rem 0 0;
   letter-spacing: 2px;
   outline: none;
+  transition: 0.3s;
+}
+.play-all:hover {
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  background-color: #05695e;
 }
 .reset-all {
   padding: 1.3rem 5rem;
@@ -265,9 +268,14 @@ html {
   background-color: #646464;
   color: #fff;
   border-radius: 10px;
-  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.1);
   margin-top: 2rem;
   outline: none;
+}
+.reset-all:hover {
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  background-color: #4a4a4a;
 }
 .summary-buttons {
   display: flex;
